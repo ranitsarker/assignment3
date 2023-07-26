@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/282d9a9b21.js" crossorigin="anonymous"></script>
     <!-- custom css -->
     <style>
         .font-lato{
@@ -32,6 +34,46 @@
 
 </head>
 <body class="font-lato">
-    
+    <!-- header start -->
+    <header>
+    <nav class="flex flex-row-reverse justify-between lg:flex-row navbar max-w-screen-xl mx-auto py-5 md:px-16 lg:px-24 lg:bg-[#F85559] lg:text-white rounded-full">
+        <div class="navbar-start lg:justify-start justify-end">
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    </ul>
+            </div>
+                <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="lg:bg-[#F85559] mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 right-0">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+                </div>
+                
+            </div>
+            <div class="navbar-center lg:flex">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case lg:text-4xl md:text-3xl text-2xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                    <div class="form-control relative">
+                    <input type="text" placeholder="search here..." class="input input-bordered w-24 md:w-auto pr-10 rounded-full" />
+                    <span class="absolute right-2 top-1/2 transform -translate-y-1/2">
+                        <i class="fa-solid fa-magnifying-glass text-[#121212] opacity-40"></i>
+                    </span>
+                    </div>
+            </div>
+        </nav>
+        <!-- nev end -->
+    </header>
+    <!-- header end -->
 </body>
 </html>
