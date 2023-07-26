@@ -18,9 +18,7 @@
 .font-lato{
     font-family: 'Lato', sans-serif;
 }
-body p{
-    color:#12121299;
-}
+
 </style>
 <!-- custom class -->
 <script>
@@ -29,16 +27,16 @@ body p{
       extend: {
           backgroundImage: {
             'team-bg':"url('./images/team.png')",
+            'fruit-custom': '#F85559',
           },
       },
     },
     }
     </script>
-
 </head>
 <body class="font-lato">
 <!-- header start -->
-<header class="max-w-screen-xl mx-auto md:px-16 lg:px-24 lg:my-10">
+<header class="max-w-screen-xl mx-auto md:px-16 lg:px-24 lg:my-12">
 <!-- nev start -->
 <nav class="lg:mb-10 flex flex-row-reverse justify-between lg:flex-row navbar lg:bg-[#F85559] lg:text-white md:text-[#121212] text-[#121212] rounded-full">
     <div class="navbar-start lg:justify-start justify-end">
@@ -78,33 +76,36 @@ body p{
 </nav>
 <!-- nev end -->
 <!-- banner start -->
-<section class="">
+<section class="flex flex-col bg-slate-950">
     <!-- slider start -->
-    <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-            <img class="" src="./images/banner1.png" class="w-full" />
+    <div class="carousel w-full flex-1">
+        <div id="slide1" class="carousel-item relative w-full h-[550px]">
+            <img class="w-full h-full object-cover"" src="./images/banner1.png" class="w-full" />
+             <!-- overlay -->
+             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
             <!-- hero content start-->
             <div class="absolute inset-0 flex items-center justify-center">
-                <!-- hero content start-->
                 <div class="hero-content text-center text-white">
                     <div class="max-w-md">
                     <h1 class="lg:text-5xl md:tex-3xl text-2xl font-bold ">
                         Exotic tastes at your<br> 
                         doorstep
                     </h1>
-                    <p class="py-6">We supply highly quality organic products</p>
-                    <button class="btn btn-primary">Shop Now</button>
+                    <p class="py-6 px-6 text-white">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] text-white border-[#F85559] hover:bg-[#F85559]">Shop Now</button>
                     </div>
                 </div>
             </div>
             <!-- hero content end--> 
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-black hover:bg-black hover:border-black">❮</a> 
+            <a href="#slide2" class="btn btn-circle  bg-black text-white border-black hover:bg-black hover:border-black">❯</a>
             </div>
         </div> 
-        <div id="slide2" class="carousel-item relative w-full">
+        <div id="slide2" class="carousel-item relative w-full h-[550px]">
             <img src="./images/banner2.png" class="w-full" />
+            <!-- overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
                     <!-- hero content start-->
                 <div class="absolute inset-0 flex items-center justify-center">
                     <!-- hero content start-->
@@ -114,19 +115,21 @@ body p{
                             Exotic tastes at your<br> 
                             doorstep
                         </h1>
-                        <p class="py-6">We supply highly quality organic products</p>
-                        <button class="btn btn-primary">Shop Now</button>
+                        <p class="py-6 px-6">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white border-[#F85559] hover:bg-[#F85559]">Shop Now</button>
                         </div>
                     </div>
                 </div>
                 <!-- hero content end--> 
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
+            <a href="#slide1" class="btn btn-circle  bg-black text-white border-black hover:bg-black hover:border-black">❮</a> 
+            <a href="#slide3" class="btn btn-circle  bg-black text-white border-black hover:bg-black hover:border-black>❯</a>
             </div>
         </div> 
-        <div id="slide3" class="carousel-item relative w-full">
+        <div id="slide3" class="carousel-item relative w-full h-[550px]">
             <img src="./images/banner3.png" class="w-full" />
+            <!-- overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
                 <!-- hero content start-->
                 <div class="absolute inset-0 flex items-center justify-center">
                 <!-- hero content start-->
@@ -136,19 +139,21 @@ body p{
                         Exotic tastes at your<br> 
                         doorstep
                     </h1>
-                    <p class="py-6">We supply highly quality organic products</p>
-                    <button class="btn btn-primary">Shop Now</button>
+                    <p class="py-6 px-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] text-white border-[#F85559] hover:bg-[#F85559]">Shop Now</button>
                     </div>
                 </div>
             </div>
             <!-- hero content end--> 
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-black hover:bg-black hover:border-black">❮</a> 
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-black hover:bg-black hover:border-black">❯</a>
             </div>
         </div> 
-        <div id="slide4" class="carousel-item relative w-full">
+        <div id="slide4" class="carousel-item relative w-full h-[550px]">
             <img src="./images/banner4.png" class="w-full" />
+            <!-- overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
                 <!-- hero content start-->
                 <div class="absolute inset-0 flex items-center justify-center">
                 <!-- hero content start-->
@@ -158,15 +163,15 @@ body p{
                         Exotic tastes at your<br> 
                         doorstep
                     </h1>
-                    <p class="py-6">We supply highly quality organic products</p>
-                    <button class="btn btn-primary">Shop Now</button>
+                    <p class="py-6 px-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] text-white border-[#F85559] hover:bg-[#F85559]">Shop Now</button>
                     </div>
                 </div>
             </div>
             <!-- hero content end--> 
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-black hover:bg-black hover:border-black">❮</a> 
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-black hover:bg-black hover:border-black">❯</a>
             </div>
         </div>
         </div>
