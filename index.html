@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment3</title>
-    <!-- tailwind and daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/282d9a9b21.js" crossorigin="anonymous"></script>
-    <!-- custom css -->
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
-    <!-- custom class -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment3</title>
+<!-- tailwind and daisy ui cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font lato -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/282d9a9b21.js" crossorigin="anonymous"></script>
+<!-- custom css -->
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+<!-- custom class -->
+<script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            colors: {
+            clifford: '#da373d',
             }
-          }
         }
-      </script>
+        }
+    }
+    </script>
 
 </head>
 <body class="font-lato">
-    <!-- header start -->
-    <header>
-    <nav class="flex flex-row-reverse justify-between lg:flex-row navbar max-w-screen-xl mx-auto py-5 md:px-16 lg:px-24 lg:bg-[#F85559] lg:text-white rounded-full">
+<!-- header start -->
+<header class="max-w-screen-xl mx-auto md:px-16 lg:px-24 my-10">
+    <!-- nev start -->
+    <nav class="lg:mb-10 flex flex-row-reverse justify-between lg:flex-row navbar lg:bg-[#F85559] lg:text-white md:text-[#121212] text-[#121212] rounded-full">
         <div class="navbar-start lg:justify-start justify-end">
             <div class="hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-lg">
@@ -71,9 +72,106 @@
                     </span>
                     </div>
             </div>
-        </nav>
-        <!-- nev end -->
-    </header>
-    <!-- header end -->
+    </nav>
+    <!-- nev end -->
+    <!-- banner start -->
+    <section class="">
+        <!-- slider start -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img class="" src="./images/banner1.png" class="w-full" />
+                <!-- hero content start-->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <!-- hero content start-->
+                    <div class="hero-content text-center text-white">
+                        <div class="max-w-md">
+                        <h1 class="lg:text-5xl md:tex-3xl text-2xl font-bold ">
+                            Exotic tastes at your<br> 
+                            doorstep
+                        </h1>
+                        <p class="py-6">We supply highly quality organic products</p>
+                        <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero content end--> 
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./images/banner2.png" class="w-full" />
+                        <!-- hero content start-->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <!-- hero content start-->
+                        <div class="hero-content text-center text-white">
+                            <div class="max-w-md">
+                            <h1 class="text-5xl font-bold ">
+                                Exotic tastes at your<br> 
+                                doorstep
+                            </h1>
+                            <p class="py-6">We supply highly quality organic products</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hero content end--> 
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./images/banner3.png" class="w-full" />
+                    <!-- hero content start-->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    <!-- hero content start-->
+                    <div class="hero-content text-center text-white">
+                        <div class="max-w-md">
+                        <h1 class="text-5xl font-bold ">
+                            Exotic tastes at your<br> 
+                            doorstep
+                        </h1>
+                        <p class="py-6">We supply highly quality organic products</p>
+                        <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero content end--> 
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="./images/banner4.png" class="w-full" />
+                    <!-- hero content start-->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    <!-- hero content start-->
+                    <div class="hero-content text-center text-white">
+                        <div class="max-w-md">
+                        <h1 class="text-5xl font-bold ">
+                            Exotic tastes at your<br> 
+                            doorstep
+                        </h1>
+                        <p class="py-6">We supply highly quality organic products</p>
+                        <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- hero content end--> 
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            </div>
+        <!-- slider end -->
+    </section>
+    <!-- banner end -->
+</header>
+<!-- header end -->
+
 </body>
 </html>
