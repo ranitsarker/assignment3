@@ -21,16 +21,16 @@
 </style>
 <!-- custom class -->
 <script>
-tailwind.config = {
+    tailwind.config = {
     theme: {
-    extend: {
-        colors: {
-        clifford: '#da373d',
-        }
+      extend: {
+          backgroundImage: {
+            'team-bg':"url('./images/team.png')",
+          },
+      },
+    },
     }
-    }
-}
-</script>
+    </script>
 
 </head>
 <body class="font-lato">
@@ -419,10 +419,79 @@ tailwind.config = {
 
 
     </div>
-    <!-- card 4end -->
+    <!-- card 4 end -->
 </div>
 <!-- part 2 end -->
+<div class="text-center mt-12">
+    <button class="btn">Shop All</button>
+</div>
 </section>
 <!-- Deal of the day end -->
+<!-- Meet the team start -->
+<section class="max-w-screen-xl mx-auto md:px-16 lg:px-24 lg:my-10">
+
+<div class="hero bg-team-bg">
+<div class="hero-overlay bg-opacity-60"></div>
+<div class="text-center text-neutral-content">
+    <div class="mt-20 lg:px-40">
+    <h3 class="text-[#fff] font-extrabold lg:text-4xl text-2xl px-3 pb-4">Meet the team section</h3>
+    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+    <div class="mb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <!-- 1st member -->
+    <div>
+        <img class="p-4 mx-auto" src="./images/member1.png" alt="">
+        <h4 class="text-[#fff] font-bold">Awlad Hossain</h4>
+        <p class="text-[#fff]">Fruits Expert</p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+    </div>
+    <!-- 2nd member -->
+    <div>
+        <img class="p-4 mx-auto" src="./images/member2.png" alt="">
+        <h4 class="text-[#fff] font-bold">Awlad Hossain</h4>
+        <p class="text-[#fff]">Fruits Expert</p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    <!-- 3rd member -->
+    <div>
+        <img class="p-4 mx-auto" src="./images/member3.png" alt="">
+        <h4 class="text-[#fff] font-bold">Awlad Hossain</h4>
+        <p class="text-[#fff]">Fruits Expert</p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    <!-- 4th member -->
+    <div>
+        <img class="p-4 mx-auto" src="./images/member4.png" alt="">
+        <h4 class="text-[#fff] font-bold">Awlad Hossain</h4>
+        <p class="text-[#fff]">Fruits Expert</p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</section>
+<!-- Meet the team end -->
 </body>
 </html>
